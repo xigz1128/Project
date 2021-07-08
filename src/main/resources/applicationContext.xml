@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+    <bean id="Usercontroller" class="cn.edu.guet.controller.Usercontroller">
+        <property name="UserServlet" ref="UserServlet"></property>
+    </bean>
+    <bean id="UserServlet" class="cn.edu.guet.bll.impl.UserServlet"></bean>
+
+    <bean id="Treecontroller" class="cn.edu.guet.controller.Treecontroller">
+        <property name="TreeServlet" ref="TreeServlet"></property>
+    </bean>
+    <bean id="TreeServlet" class="cn.edu.guet.bll.impl.TreeServlet"></bean>
+    <bean id="Dishcontroller" class="cn.edu.guet.controller.Dishcontroller"></bean>
+    <bean id="Cartcontroller" class="cn.edu.guet.controller.Cartcontroller"></bean>
+    <bean id="Reservecontroller" class="cn.edu.guet.controller.Reservecontroller"></bean>
+</beans>
